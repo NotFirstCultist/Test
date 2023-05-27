@@ -1,12 +1,5 @@
-let question = 0;
+let canvas = document.querySelector('.canvas');
+let screen = canvas.getContext('2d');
 
-let btnR = document.querySelectorAll('.right');
-btnR[question].addEventListener('click', doRight);
-
-console.log(btnR);
-
-function doRight(){
-    question += 1;
-    btnR[question].addEventListener('click', doRight);
-    document.querySelector('.q1').setAttribute('style', '--visibility: hidden')
-}
+screen.strokeStyle = '#fff';
+screen.strokeRect(0, 0, 300, 500);
