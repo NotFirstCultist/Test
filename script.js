@@ -29,7 +29,7 @@ function randomNum(min, max){
 }
 
 function CreateLine(){
-    lineX.push(randomNum(5, 295));
+    lineX.push(randomNum(5, canvas.width - 5));
     lineY.push(10);
 }
 
